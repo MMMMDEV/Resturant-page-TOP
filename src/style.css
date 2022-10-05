@@ -9,13 +9,15 @@
 }
 
 :root {
-    --logo-container-height: 10%;
+    --logo-container-height: 8%;
     --banner-container-height: 25%;
     --chip-container-height: 10%;
-    --hours-container-height: 55%;
+    --hours-container-height: 57%;
+
     --hours-height: 70%;
     --address-height: 20%;
     --gitLink-height: 10%;
+
     --accent-bronze: #a46b55ee;
     --accent-dark-bronze: #2f1811ea;
     --main-color: #f9f9f9;
@@ -226,4 +228,19 @@ body {
 .gitLink {
     width: 100%;
     height: var(--gitLink-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.my-link {
+    display: flex;
+    font-size: 0.8rem;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
 }

@@ -1,9 +1,10 @@
 import { newSectionContainer } from "./first-load";
 
+
+const hoursContainer = document.createElement("div");
 export function menu() {
     // creating objects
-    const hoursContainer = document.createElement("div");
-
+    
     const hours = document.createElement("div");
     const hourTittle = document.createElement("p");
     const timeM = document.createElement("p");
@@ -29,6 +30,9 @@ export function menu() {
     addressTxt.textContent = "7279 Fawn Dr.San Diego, CA 92126";
 
     const gitLink = document.createElement("div");
+    const myLink = document.createElement("a");
+    myLink.href = "https://github.com/MMMMDEV";
+    myLink.textContent = "Created by MMMMDEV";
 
     // adding classes
     hoursContainer.classList.add("hours-container");
@@ -48,6 +52,7 @@ export function menu() {
     addressTxt.classList.add("address-txt");
 
     gitLink.classList.add("gitLink");
+    myLink.classList.add("my-link")
 
     // appending
     newSectionContainer.appendChild(hoursContainer);
@@ -64,4 +69,7 @@ export function menu() {
     hours.insertAdjacentElement("beforeend", timeSU);
     address.insertAdjacentElement("beforeend", addressTittle);
     address.insertAdjacentElement("beforeend", addressTxt);
-}
+    gitLink.insertAdjacentElement("beforeend", myLink);
+};
+
+export {hoursContainer};
