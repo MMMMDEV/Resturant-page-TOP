@@ -25,9 +25,10 @@ export function hours() {
 
     const address = document.createElement("div");
     const addressTittle = document.createElement("p");
-    const addressTxt = document.createElement("p");
+    const addressTxt = document.createElement("a");
     addressTittle.textContent = "Address";
     addressTxt.textContent = "7279 Fawn Dr.San Diego, CA 92126";
+    addressTxt.href = "https://www.google.com/maps/place/7279+Prairie+Fawn+Dr,+San+Diego,+CA+92127/@33.0172191,-117.114931,17z/data=!4m13!1m7!3m6!1s0x80dbf702ad7d7d71:0x79e76b3f411a5b0b!2s7279+Prairie+Fawn+Dr,+San+Diego,+CA+92127!3b1!8m2!3d33.0172191!4d-117.114931!3m4!1s0x80dbf702ad7d7d71:0x79e76b3f411a5b0b!8m2!3d33.0172191!4d-117.114931"
 
     const gitLink = document.createElement("div");
     const myLink = document.createElement("a");

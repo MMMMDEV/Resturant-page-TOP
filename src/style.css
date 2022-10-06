@@ -26,6 +26,9 @@
 *, *::before, *::after {
     box-sizing: border-box;
 }
+*:focus {
+    outline: none;
+}
 
 html,
 body {
@@ -87,7 +90,7 @@ body {
     margin: 0px;
     color: var(--main-color);
     font-family: "EBGaramond";
-    font-size: 1.6rem;
+    font-size: 2rem;
     z-index: 5;
 }
 
@@ -97,7 +100,7 @@ body {
     padding: 0px 50px;
     color: var(--main-color);
     font-family: "EBGaramond";
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     z-index: 5;
 }
 
@@ -141,6 +144,7 @@ body {
     border: 1px solid var(--light-dark);
     cursor: pointer;
     font-family: "EBGaramond";
+    background-color: var(--main-color);
 }
 
 .active-btn {
@@ -229,6 +233,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "EBGaramond";
 
 }
 
@@ -299,4 +304,131 @@ a, a:visited {
 .price {
     margin: 0px;
     font-size: 0.9rem;
+}
+
+/*-------  contact module -------*/
+
+.contact-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "EBGaramond";
+}
+
+.tittle-form-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-tittle {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+    height: 68%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--accent-bronze);
+    border-radius: 10px;
+}
+
+.label {
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.email {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.email-label {
+    width: 55px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.input-email {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    flex: 1;
+    border: 1px solid var(--accent-bronze);
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.comment {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 20px;
+}
+
+.comment-label {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.input-comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid var(--accent-bronze);
+    border-radius: 10px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+    padding: 5px;
+    font-size: "EBGaramond";
+    cursor: pointer;
+    
+}
+
+.input-comment:focus,
+.input-email:focus {
+    border: 1px solid transparent;
+    outline: 2px solid #dc9e85ee;
+}
+
+.btn-form-container {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-form-btn {
+    width: 70px;
+    height: 35px;
+    background-color: var(--main-color);
+    border: 1px solid black;
+    border-radius: 15px;
 }
