@@ -19,9 +19,20 @@ export function firstLoad() {
     const textBottom = document.createElement("p");
     textTop.textContent = "Welcome";
     textBottom.textContent = "Have a nice and relaxing meal at the finest steak house in San Diego";
+    const creditContainer = document.createElement("div");
+    const textBeforeCredit = document.createElement("p");
+    const imgCredit = document.createElement("a");
+    const textBetweenCredit = document.createElement("p");
+    const imgCredit2 = document.createElement("a");
     const overlay = document.createElement("div");
     const mykitchen = new Image();
     mykitchen.src = kitchen;
+    imgCredit.href = "unsplash.com/@anniespratt?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText";
+    imgCredit2.href = "https://unsplash.com/s/photos/resturant-kitchen?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText";
+    textBeforeCredit.textContent = "Photo by ";
+    imgCredit.textContent = " Annie Spratt ";
+    textBetweenCredit.textContent = " on ";
+    imgCredit2.textContent = " Unsplash";
     
     const chipContainer = document.createElement("div");
     const chipTop = document.createElement("div");
@@ -40,6 +51,13 @@ export function firstLoad() {
     bannerContainer.classList.add("banner-container");
     textTop.classList.add("text-top");
     textBottom.classList.add("text-bottom");
+
+    creditContainer.classList.add("credit-container");
+    textBeforeCredit.classList.add("text-before-credit");
+    imgCredit.classList.add("my-link");
+    textBetweenCredit.classList.add("text-between-credit");
+    imgCredit2.classList.add("my-link");
+
     overlay.classList.add("overlay");
     mykitchen.classList.add("kitchen-img");
     
@@ -63,7 +81,12 @@ export function firstLoad() {
 
     bannerContainer.insertAdjacentElement("beforeend", textTop);
     bannerContainer.insertAdjacentElement("beforeend", textBottom);
+    bannerContainer.insertAdjacentElement("beforeend", creditContainer);
     bannerContainer.appendChild(overlay);
+    creditContainer.insertAdjacentElement("beforeend", textBeforeCredit);
+    creditContainer.insertAdjacentElement("beforeend", imgCredit);
+    creditContainer.insertAdjacentElement("beforeend", textBetweenCredit);
+    creditContainer.insertAdjacentElement("beforeend", imgCredit2);
     
     chipContainer.insertAdjacentElement("beforeend", chipTop);
     chipTop.insertAdjacentElement("beforeend", btnHome);

@@ -15,7 +15,7 @@
     --s1: 10vh;
     --s2: 92vh;
     --s4: 84vh;
-    --Aheight: calc(var(--s1) + var(--s2) + var(--s1) + var(--s4));
+    --Aheight: calc(2*(var(--s1)) + (var(--s2) + var(--s4)));
 
     --accent-bronze: #a46b55ee;
     --accent-dark-bronze: #2f1811ea;
@@ -102,6 +102,32 @@ body {
     font-family: "EBGaramond";
     font-size: 1.5rem;
     z-index: 5;
+}
+
+.credit-container {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    color: var(--main-color);
+    font-family: "EBGaramond";
+    gap: 3px;
+    z-index: 5;
+}
+
+.credit-container a {
+    color: var(--main-color);
+}
+
+.text-before-credit {
+    font-size: 0.8rem;
+}
+
+.text-between-credit {
+    font-size: 0.8rem;
 }
 
 .overlay {
@@ -431,4 +457,575 @@ a, a:visited {
     background-color: var(--main-color);
     border: 1px solid black;
     border-radius: 15px;
+    cursor: pointer;
+}
+
+/* landscape */
+
+@media only screen and (min-width: 600px) and (max-width: 920px) and (min-height: 279px) and (max-height: 550px) {
+    :root {
+        --s1: 12vh;
+        --s2: 90vh;
+        --s4: 140vh;
+    }
+
+    .text-bottom {
+        padding: 0px 120px;
+    }
+
+    .contact-container {
+        width: 50%;
+    }
+
+}
+
+/* tablet */
+
+@media only screen and (min-height: 1000px) and (max-height: 1400px) and (min-width: 760px) and (max-width: 913px) {
+    :root {
+        --s1: 8vh;
+        --s2: 93vh;
+        --s4: 85vh;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    .text-top {
+        font-size: 3rem;
+    }
+    
+    .text-bottom {
+        font-size: 2.5rem;
+    }
+
+    .credit-container {
+        height: 60px;
+    }
+
+    .my-link {
+        font-size: 1.4rem;
+    }
+
+    .text-before-credit {
+        font-size: 1.4rem;
+    }
+    
+    .text-between-credit {
+        font-size: 1.4rem;
+    }
+
+    /* chips */
+
+    .btn-home,
+    .btn-menu,
+    .btn-contact {
+        width: 95px;
+        height: 45px;
+        border-radius: 25px;
+        font-size: 1.5rem;
+    }
+
+    /* hour module */
+
+    .hour-tittle {
+        font-size: 1.9rem;
+    }
+
+    .timesTxt{
+        font-size: 1.5rem;
+    }
+
+    .address-tittle {
+        font-size: 1.9rem;
+    }
+
+    .address-txt {
+        font-size: 1.5rem;
+    }
+
+    .contact-container {
+        width: 50%;
+    }
+
+    /* menu module */
+
+    .lunch-tittle {
+        font-size: 1.8rem;
+    }
+
+    .entree-tittle {
+        font-size: 1.8rem;
+    }
+
+    .dish {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    /* contact moduel */
+
+    .form-tittle {
+        font-size: 1.8rem;
+    }
+
+    .form {
+        margin: 80px 0px;
+    }
+
+    .email-label {
+        width: 80px;
+    }
+
+    .label {
+        font-size: 1.5rem;
+    }
+
+    .input-email {
+        height: 30px;
+        font-size: 1.3rem;
+    }
+
+    .input-comment {
+        font-size: 1.3rem;
+    }
+
+    .submit-form-btn {
+        width: 95px;
+        height: 45px;
+        border-radius: 25px;
+        font-size: 1.5rem;
+    }
+}
+
+/* landscape */
+
+@media only screen and (min-height: 760px) and (max-height: 1380px) and (min-width: 1023px) and (max-width: 1380px) {
+    :root {
+        --s1: 10vh;
+        --s2: 93vh;
+        --s4: 110vh;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    .text-top {
+        font-size: 3rem;
+    }
+    
+    .text-bottom {
+        font-size: 2.5rem;
+        padding: 0px 250px;
+    }
+
+    .credit-container {
+        height: 85px;
+    }
+
+    .my-link {
+        font-size: 1.4rem;
+    }
+
+    .text-before-credit {
+        font-size: 1.4rem;
+    }
+    
+    .text-between-credit {
+        font-size: 1.4rem;
+    }
+
+    /* chips */
+
+    .btn-home,
+    .btn-menu,
+    .btn-contact {
+        width: 95px;
+        height: 45px;
+        border-radius: 25px;
+        font-size: 1.5rem;
+    }
+
+    /* hour module */
+
+    .hour-tittle {
+        font-size: 1.9rem;
+    }
+
+    .timesTxt{
+        font-size: 1.5rem;
+    }
+
+    .address-tittle {
+        font-size: 1.9rem;
+    }
+
+    .address-txt {
+        font-size: 1.5rem;
+    }
+
+    .contact-container {
+        width: 50%;
+    }
+
+    /* menu module */
+
+    .lunch-tittle {
+        font-size: 1.8rem;
+    }
+
+    .entree-tittle {
+        font-size: 1.8rem;
+    }
+
+    .dish {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    /* contact moduel */
+
+    .form-tittle {
+        font-size: 1.8rem;
+    }
+
+    .form {
+        margin: 60px 0px;
+    }
+
+    .email-label {
+        width: 80px;
+    }
+
+    .label {
+        font-size: 1.5rem;
+    }
+
+    .input-email {
+        height: 30px;
+        font-size: 1.3rem;
+    }
+
+    .input-comment {
+        font-size: 1.3rem;
+    }
+
+    .submit-form-btn {
+        width: 95px;
+        height: 45px;
+        border-radius: 25px;
+        font-size: 1.5rem;
+    }
+}
+
+/* desktop */
+
+@media only screen and (min-height: 1401px) and (min-width: 600px) and (max-width: 1024px) {
+    :root {
+        --s1: 6vh;
+        --s2: 95vh;
+        --s4: 50vh;
+    }
+
+    .logo {
+        font-size: 3rem;
+    }
+
+    .text-top {
+        font-size: 3rem;
+    }
+    
+    .text-bottom {
+        font-size: 2.5rem;
+    }
+
+    .credit-container {
+        height: 80px;
+    }
+
+    .my-link {
+        font-size: 1.4rem;
+    }
+
+    .text-before-credit {
+        font-size: 1.4rem;
+    }
+    
+    .text-between-credit {
+        font-size: 1.4rem;
+    }
+
+    /* chips */
+
+    .btn-home,
+    .btn-menu,
+    .btn-contact {
+        width: 95px;
+        height: 45px;
+        border-radius: 25px;
+        font-size: 1.5rem;
+        transition: 0.2s;
+    }
+
+    button:hover {
+        box-shadow: -2px -2px 3px 1px black;
+        translate: 2px 2px;
+    }
+
+    button:active {
+        box-shadow: none;
+        translate: -2px -2px;
+    }
+
+    .active-btn:hover {
+        box-shadow: -3px -3px 5px 2px rgb(0, 0, 0);
+    }
+    .active-btn:active {
+        box-shadow: none;
+        translate: -3px -3px;
+    }
+
+    /* hour module */
+
+    .hour-tittle {
+        font-size: 1.9rem;
+    }
+
+    .timesTxt{
+        font-size: 1.5rem;
+    }
+
+    .address-tittle {
+        font-size: 1.9rem;
+    }
+
+    .address-txt {
+        font-size: 1.5rem;
+    }
+
+    .contact-container {
+        width: 50%;
+    }
+
+    /* menu module */
+
+    .lunch-tittle {
+        font-size: 1.8rem;
+    }
+
+    .entree-tittle {
+        font-size: 1.8rem;
+    }
+
+    .dish {
+        font-size: 1.5rem;
+    }
+
+    .price {
+        font-size: 1.5rem;
+    }
+
+    /* contact moduel */
+
+    .form-tittle {
+        font-size: 1.8rem;
+    }
+
+    .form {
+        margin: 80px 0px;
+        padding: 0px 80px;
+        border-radius: 40px;
+    }
+
+    .email-label {
+        width: 80px;
+    }
+
+    .label {
+        font-size: 1.5rem;
+    }
+
+    .input-email {
+        height: 30px;
+        font-size: 1.3rem;
+    }
+
+    .input-comment {
+        font-size: 1.3rem;
+    }
+
+    .submit-form-btn {
+        width: 95px;
+        height: 45px;
+        border-radius: 25px;
+        font-size: 1.5rem;
+        transition: 0.2s;
+    }
+}
+
+/* landscape */
+
+@media only screen and (min-width: 1025px){
+    :root {
+        --s1: 8vh;
+        --s2: 93vh;
+        --s4: 75vh;
+    }
+
+    .logo {
+        font-size: 3.5rem;
+    }
+
+    .text-top {
+        font-size: 3.5rem;
+    }
+    
+    .text-bottom {
+        font-size: 3rem;
+        padding: 0px 600px;
+    }
+
+    .credit-container {
+        height: 90px;
+    }
+
+    .my-link {
+        font-size: 1.6rem;
+    }
+
+    .text-before-credit {
+        font-size: 1.6rem;
+    }
+    
+    .text-between-credit {
+        font-size: 1.6rem;
+    }
+
+    /* chips */
+
+    .btn-home,
+    .btn-menu,
+    .btn-contact {
+        width: 130px;
+        height: 60px;
+        border-radius: 35px;
+        font-size: 2rem;
+        border: 2px solid var(--light-dark);
+        transition: 0.2s;
+    }
+
+    button:hover {
+        box-shadow: -2px -2px 3px 1px black;
+        translate: 2px 2px;
+    }
+
+    button:active {
+        box-shadow: none;
+        translate: -2px -2px;
+    }
+
+    .active-btn:hover {
+        box-shadow: -3px -3px 5px 2px rgb(0, 0, 0);
+    }
+    .active-btn:active {
+        box-shadow: none;
+        translate: -3px -3px;
+    }
+
+    /* hour module */
+
+    .hour-tittle {
+        font-size: 2.5rem;
+    }
+
+    .timesTxt{
+        font-size: 2rem;
+    }
+
+    .address-tittle {
+        font-size: 2.5rem;
+    }
+
+    .address-txt {
+        font-size: 2rem;
+    }
+
+    .contact-container {
+        width: 50%;
+    }
+
+    /* menu module */
+
+    .lunch-tittle {
+        font-size: 2.5rem;
+    }
+
+    .entree-tittle {
+        font-size: 2.5rem;
+    }
+
+    .dish {
+        font-size: 2rem;
+        padding-top: 25px;
+    }
+
+    .price {
+        font-size: 1.9rem;
+    }
+
+    /* contact moduel */
+
+    .form-tittle {
+        font-size: 2.5rem;
+    }
+
+    .form {
+        width: 70%;
+        margin: 60px 0px;
+        border-width: 2px;
+        padding: 0px 80px;
+        border-radius: 40px;
+    }
+
+    .email-label {
+        width: 110px;
+    }
+
+    .label {
+        font-size: 2rem;
+    }
+
+    .input-email {
+        height: 40px;
+        font-size: 1.8rem;
+        border-width: 2px;
+    }
+
+    .input-comment {
+        font-size: 1.8rem;
+        border-width: 2px;
+    }
+
+    .input-comment:focus,
+    .input-email:focus {
+        border: 2px solid transparent;
+        outline: 4px solid #dc9e85ee;
+}
+
+    .submit-form-btn {
+        width: 130px;
+        height: 60px;
+        border-radius: 35px;
+        font-size: 2rem;
+        border-width: 2px;
+        transition: 0.2s;
+    }
 }
