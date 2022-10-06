@@ -2,7 +2,7 @@ import { newSectionContainer } from "./first-load";
 
 
 const hoursContainer = document.createElement("div");
-export function menu() {
+export function hours() {
     // creating objects
     
     const hours = document.createElement("div");
@@ -52,7 +52,7 @@ export function menu() {
     addressTxt.classList.add("address-txt");
 
     gitLink.classList.add("gitLink");
-    myLink.classList.add("my-link")
+    myLink.classList.add("my-link");
 
     // appending
     newSectionContainer.appendChild(hoursContainer);

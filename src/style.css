@@ -9,14 +9,13 @@
 }
 
 :root {
-    --logo-container-height: 8%;
-    --banner-container-height: 25%;
-    --chip-container-height: 10%;
-    --hours-container-height: 57%;
-
-    --hours-height: 70%;
-    --address-height: 20%;
-    --gitLink-height: 10%;
+    --hours-height: 100%;
+    --address-height: 50%;
+    --gitLink-height: 12%;
+    --s1: 10vh;
+    --s2: 92vh;
+    --s4: 84vh;
+    --Aheight: calc(var(--s1) + var(--s2) + var(--s1) + var(--s4));
 
     --accent-bronze: #a46b55ee;
     --accent-dark-bronze: #2f1811ea;
@@ -31,25 +30,23 @@
 html,
 body {
     width: 100%;
-    height: 100%;
+    height: var(--Aheight);
 }
 
 /*------- first load -------*/
 
 .content {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    height: var(--Aheight);
+    display: grid;
+    grid-template-rows: var(--s1) var(--s2) var(--s1) var(--s4);
     background-color: #f9f9f9;
 }
 
 /* logo */
 .logo-container {
     width: 100%;
-    height: var(--logo-container-height);
+    height: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -65,7 +62,7 @@ body {
 /* banner */
 .banner-container {
     width: 100%;
-    height: var(--banner-container-height);
+    height: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -116,7 +113,7 @@ body {
 
 .chip-container {
     width: 100%;
-    height: var(--chip-container-height);
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,7 +159,7 @@ body {
 
 .new-section-container {
     width: 100%;
-    height: var(--hours-container-height);
+    height: var(--s4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -187,15 +184,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     font-family: "EBGaramond";
+    padding: 20px 0px;
 }
 
 .hour-tittle {
     margin: 0px;
     padding-bottom: 5px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .timesTxt{
@@ -209,7 +207,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     font-family: "EBGaramond";
     text-align: center;
 }
@@ -217,7 +215,7 @@ body {
 .address-tittle {
     margin: 0px;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 .address-txt {
@@ -237,10 +235,68 @@ body {
 .my-link {
     display: flex;
     font-size: 0.8rem;
+    padding: 5px 0px;
 }
 
 a, a:visited {
     text-decoration: none;
     color: black;
     cursor: pointer;
+}
+
+
+/*-------  menu module -------*/
+
+.menu-container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "EBGaramond";
+}
+
+.menu-lunch {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-entrees {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lunch-tittle {
+    margin: 0px;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.entree-tittle {
+    margin: 0px;
+    padding-top: 15px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.dish {
+    margin: 0px;
+    padding-top: 15px;
+    font-size: 0.9rem;
+}
+
+.price {
+    margin: 0px;
+    font-size: 0.9rem;
 }
